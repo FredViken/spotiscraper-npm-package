@@ -27,10 +27,7 @@ exports.getStreams = (url) => {
                     });
                     
                     browser.close()
-                    console.log(data);
                     return data
-    
-                
                 }
     
             } catch (err){
