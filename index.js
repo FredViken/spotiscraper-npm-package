@@ -1,6 +1,5 @@
 const puppeteer = require('puppeteer');
 
-
 exports.getStreams = (url) => {
     data = [];
     (async () => {
@@ -9,7 +8,6 @@ exports.getStreams = (url) => {
         })
         const page = await browser.newPage()
     
-        
         await page.goto(url, {
             waitUntil: 'load'
         });
@@ -21,8 +19,6 @@ exports.getStreams = (url) => {
                 if ('name' in album.data.album.tracks.items[0].track){
                     const tracks = album.data.album.tracks.items
                     
-                    
-    
                     tracks.forEach(element => {
                         console.log(element.track.name + ' - ' + element.track.playcount);
                         data.push({
@@ -41,10 +37,9 @@ exports.getStreams = (url) => {
             } catch (err){
                
             }
-    
                 
         });
         
-    })().catch(err => console.error(err))
+    })().catch(err => console.error())
     
 }
