@@ -1,0 +1,1 @@
+# spotiscraper-npm-package
