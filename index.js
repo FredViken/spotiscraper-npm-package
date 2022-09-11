@@ -20,7 +20,6 @@ exports.getStreams = (url) => {
                     const tracks = album.data.album.tracks.items
                     
                     tracks.forEach(element => {
-                        console.log(element.track.name + ' - ' + element.track.playcount);
                         data.push({
                             name: element.track.name,
                             streams: element.track.playcount
