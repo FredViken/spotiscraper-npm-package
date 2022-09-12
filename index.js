@@ -34,14 +34,3 @@ exports.getStreams = async (url, callback) => {
     })
         
 }
-
-exports.getStreams('https://open.spotify.com/album/21jF5jlMtzo94wbxmJ18aa', (val) => {
-    console.log(val);
-    
-})
-    
-
-
-//console.log('y=' + y);
-
-//console.log('a= ' + ('https://open.spotify.com/album/21jF5jlMtzo94wbxmJ18aa'));
