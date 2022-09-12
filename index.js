@@ -17,6 +17,7 @@ exports.getStreams = async (url, callback) => {
                 tracks.forEach((element,key) => {
                     
                     data.push({
+                        trackNumber: element.track.trackNumber,
                         name: element.track.name,
                         streams: element.track.playcount,
                         uri: element.track.uri
