@@ -1,6 +1,6 @@
 {
   "name": "spotiscraper",
-  "version": "1.0.6",
+  "version": "1.3.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^17.1.3"
+    "puppeteer": "^17.1.3",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.1"
   },
   "repository": {
     "type": "git",
